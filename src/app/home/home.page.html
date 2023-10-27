@@ -1,0 +1,39 @@
+
+<div class="container">
+  <app-header [counter]="counter" />
+  <div class="main">
+    <div class="word">
+      <div *ngFor="let word of words[1]">
+        <div class="character" [ngClass]="{'b-score': word.score === 'B'}">{{ word.character }}</div>
+        <div class="double-border">
+          <div class="articulation" >[{{ word.articulation }}]</div>
+        </div> 
+        
+      </div>
+    </div>
+    <div class="wave"></div>
+  </div>
+
+  <div class="control-panel">
+    <div>
+      <ion-button fill="clear" size="large" color="dark">
+        <ion-icon name="caret-forward-outline" color="dark" />
+      </ion-button>
+      <ion-button fill="clear" size="large" color="dark">
+        <ion-icon name="checkmark-circle-outline" color="dark" />
+      </ion-button>
+    </div>
+    <div>
+      <ion-button fill="clear" size="large" color="dark">
+        <ion-icon name="chevron-back-outline" color="medium" />
+      </ion-button>
+      <ion-button fill="clear" size="large" color="medium">
+        <ion-icon name="chevron-forward-outline" />
+      </ion-button>   
+    </div>
+  </div>
+</div>
+
+
+
+

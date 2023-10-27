@@ -1,0 +1,7 @@
+{
+  "name": "FLA",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
